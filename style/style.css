@@ -1,0 +1,451 @@
+@import './fonts.css';
+
+:root {
+    --mont: 'Montserrat';
+    --treb: 'Trebuchet';
+    --violet: #7177F1;
+    --body: #fff;
+    --text: #323232;
+    --dots: #828282;
+    --work_info: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    background-color: var(--body);
+}
+
+.logo::after {
+    content: url(../images/logo_1.png);
+}
+
+.nav-link {
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--violet);
+    text-transform: capitalize;
+    display: block;
+}
+
+.order {
+    width: 190px;
+    height: 40px;
+}
+
+.all-btn {
+    background-color: var(--violet);
+    color: white;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.all-btn:hover {
+    background-color: white;
+    color: var(--violet);
+}
+
+.phone-icon {
+    font-size: 27px;
+}
+
+.menu {
+    width: 35px;
+    height: 3px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu::after,
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--violet);
+    left: 0;
+    top: 10px;
+    transition: 0.5s;
+}
+
+.menu::before {
+    top: -10px;
+}
+
+.navbar-toggler:not(.collapsed) .menu::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .menu::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar-toggler.collapsed .menu {
+    background-color: var(--violet);
+}
+
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+
+/* Nav end */
+/* Intro start */
+.intro {
+    margin-top: 30px;
+}
+
+.intro_subtitle {
+    margin-top: 20px;
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--text);
+    text-transform: capitalize;
+}
+
+.intro_title {
+    font-family: var(--mont);
+    font-weight: 600;
+    color: var(--violet);
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.intro_btn {
+    width: 300px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.carousel-indicators {
+    margin: 0;
+    margin-top: 50px;
+    position: static;
+    column-gap: 15px;
+}
+
+.carousel-indicators-dots {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: var(--dots) !important;
+    transition: 0.5s !important;
+}
+
+.carousel-indicators-dots.active {
+    background-color: var(--violet) !important;
+    transform: scale(1.2);
+}
+
+.carusel_img {
+    height: 500px;
+}
+
+.intro_icon-html {
+    color: #E44F26;
+}
+
+.intro_icon-css {
+    color: #1572B6;
+}
+
+.intro_icon-bootstrap {
+    color: #790FF1;
+}
+
+.intro_icon-title {
+    font-family: var(--mont);
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--violet);
+    margin-top: 15px;
+}
+
+/* Intro end */
+/* Work start */
+.work {
+    margin-top: 75px;
+}
+
+.work_info {
+    background: var(--work_info);
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    width: 190px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text);
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 24px;
+}
+
+.work_info::after {
+    content: '5+';
+    width: 40px;
+    height: 40px;
+    background-color: #0FDAC2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mont);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 1);
+}
+
+.work_desc {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    background-color: var(--body);
+    height: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+
+.work_title {
+    font-size: 40px;
+    font-family: var(--mont);
+    font-weight: 600;
+    color: var(--violet);
+}
+
+.work_text {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.work_btn {
+    width: 190px;
+    height: 45px;
+    margin-left: 80px;
+    font-size: 18px;
+    font-family: var(--mont);
+    text-transform: uppercase;
+}
+
+/* Work end */
+/* Capabilites start */
+.cap {
+    margin-top: 75px;
+}
+
+.cap_title {
+    text-align: center;
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--violet);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.accordion {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    background-color: var(--body);
+    overflow: hidden;
+}
+
+.accordion_button {
+    display: flex;
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--body);
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+
+.accordion_icon-down {
+    margin-left: auto;
+    transition: 0.5s;
+    color: white;
+}
+
+.accoridon_icon-html {
+    color: #E44F26;
+    transition: 0.5s;
+}
+
+.accordion_title {
+    font-size: 18px;
+    font-family: var(--mont);
+    font-weight: 900;
+    color: var(--violet);
+    margin-left: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.accordion_body {
+    background-color: var(--violet);
+    color: white;
+    padding: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: var(--mont);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.accordion_button.collapsed .accordion_icon-down {
+    color: var(--violet);
+    transform: rotate(180deg);
+}
+
+.accordion_button:not(.collapsed) {
+    background-color: var(--violet);
+}
+
+.accordion_button:not(.collapsed) .accoridon_icon-html {
+    color: white;
+}
+
+.accordion_button:not(.collapsed) .accordion_title {
+    color: white;
+}
+
+.accordion_item:not(:last-of-type) .accordion_button.collapsed::after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: #DDDDDD;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+.icon-css {
+    color: #1572B6;
+}
+
+.icon-bootstrap {
+    color: #790FF1;
+}
+
+/* Capabilites end */
+/* Portfolio start */
+.portfolio_title {
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--violet);
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.tab_link {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--violet);
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.35);
+    background-color: var(--body);
+    border: none;
+    transition: 0.5s;
+}
+
+.tab_link.active,
+.tab_link.active:hover {
+    background-color: var(--violet);
+    color: var(--body);
+}
+
+.tab_link:hover {
+    background-color: var(--body);
+    color: var(--violet);
+}
+
+.tab_item {
+    height: 320px;
+}
+
+.tab_item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.tab {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    background-color: var(--body);
+    padding: 20px;
+}
+.tab_desc-title{
+    color: var(--violet);
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.tab_desc-text{
+    color: var(--text);
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin: 25px 0 20px;
+}
+.tab_desc-btn{
+    width: 190px;
+    height: 45px;
+    margin-left: 30px;
+    font-family: var(--mont);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* Portfolio end */

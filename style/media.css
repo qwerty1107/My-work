@@ -1,0 +1,106 @@
+@media(prefers-color-scheme:light) {
+    :root {
+        --body: #151437;
+        --text: #FFFFFF;
+        --dots: #EBEBEB;
+        --work_info: #7177F1;
+    }
+
+    body {
+        background-color: var(--body);
+    }
+
+    .logo::after {
+        content: url(../images/logo_2.png);
+    }
+}
+
+@media(max-width:550px) {
+    .carusel_img {
+        height: 100%;
+    }
+
+    .intro_icon-bootstrap,
+    .intro_icon-css,
+    .intro_icon-html {
+        font-size: 80px;
+    }
+
+    .intro_btn {
+        width: 80%;
+    }
+
+    .intro_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .work_info {
+        left: 12px;
+        top: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .work_img {
+        width: 100%;
+    }
+
+    .work_info {
+        width: 150px;
+        height: 50px;
+    }
+
+    .work_info-text {
+        font-size: 16px;
+    }
+
+    .work_info::after {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .work_title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .work_text {
+        text-align: justify;
+        margin: 15px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .work_btn {
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .work_desc {
+        padding: 15px;
+    }
+}
+
+@media(max-width:400px) {
+    .cap {
+        margin-top: 30px;
+    }
+
+    .cap_title {
+        font-size: 30px;
+    }
+
+    .accordion_body {
+        padding: 0 15px 15px;
+    }
+    .accordion_title{
+        font-size: 16px;
+    }
+    .accordion_body{
+        font-size: 14px;
+    }
+}
